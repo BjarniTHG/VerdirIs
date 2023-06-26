@@ -7,6 +7,17 @@ body {
     margin: 0;
 }
 
+@import url(//db.onlinewebfonts.com/c/cbf9b417fc15851ba870990e585e35a2?family=DIN);
+
+@font-face {font-family: "DIN";
+     src: url("//db.onlinewebfonts.com/t/cbf9b417fc15851ba870990e585e35a2.eot");
+    src: url("//db.onlinewebfonts.com/t/cbf9b417fc15851ba870990e585e35a2.eot?#iefix") 
+    format("embedded-opentype"), url("//db.onlinewebfonts.com/t/cbf9b417fc15851ba870990e585e35a2.woff2") 
+    format("woff2"), url("//db.onlinewebfonts.com/t/cbf9b417fc15851ba870990e585e35a2.woff") 
+    format("woff"), url("//db.onlinewebfonts.com/t/cbf9b417fc15851ba870990e585e35a2.ttf") 
+    format("truetype"), url("//db.onlinewebfonts.com/t/cbf9b417fc15851ba870990e585e35a2.svg#DIN") 
+    format("svg"); }
+
 .content{
     flex: 1;
 }
@@ -17,7 +28,7 @@ header {
     z-index: 100;  /* Optional: This ensures the header stays above all other content */
     padding: 5px;
     color: #ffffff;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-family: 'DIN';
 }
 
 main{
@@ -27,7 +38,7 @@ main{
 footer {
     color:#ffffff;
     padding-left: 15px;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-family: 'DIN';
 }
 
 #spacer{
@@ -81,6 +92,7 @@ background-color: #001020;
     color: #ffffff; 
     font-weight: 700;
     font-size: 60pt;
+    font-family: 'DIN';
 }
 
 .main-subtitle{
