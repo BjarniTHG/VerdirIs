@@ -36,9 +36,6 @@ header {
   font-family: 'DIN';
 }
 
-main {
-}
-
 footer {
   color: #ffffff;
   padding-left: 15px;
@@ -97,9 +94,11 @@ footer {
 }
 
 .slide-text {
+  display: flex;
+  justify-content: center;
+  width: 100%;
   position: absolute;
   bottom: 55%;
-  left: 45%;
   color: white;
   padding: 10px;
   font-family: 'DIN';
