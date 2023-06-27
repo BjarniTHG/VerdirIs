@@ -1,128 +1,165 @@
 body {
-    background-color: #ffffff;
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-    margin: 0;
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  margin: 0;
 }
 
 @import url(//db.onlinewebfonts.com/c/cbf9b417fc15851ba870990e585e35a2?family=DIN);
 
-@font-face {font-family: "DIN";
-     src: url("//db.onlinewebfonts.com/t/cbf9b417fc15851ba870990e585e35a2.eot");
-    src: url("//db.onlinewebfonts.com/t/cbf9b417fc15851ba870990e585e35a2.eot?#iefix") 
-    format("embedded-opentype"), url("//db.onlinewebfonts.com/t/cbf9b417fc15851ba870990e585e35a2.woff2") 
-    format("woff2"), url("//db.onlinewebfonts.com/t/cbf9b417fc15851ba870990e585e35a2.woff") 
-    format("woff"), url("//db.onlinewebfonts.com/t/cbf9b417fc15851ba870990e585e35a2.ttf") 
-    format("truetype"), url("//db.onlinewebfonts.com/t/cbf9b417fc15851ba870990e585e35a2.svg#DIN") 
-    format("svg"); }
+@font-face {
+  font-family: 'DIN';
+  src: url('//db.onlinewebfonts.com/t/cbf9b417fc15851ba870990e585e35a2.eot');
+  src: url('//db.onlinewebfonts.com/t/cbf9b417fc15851ba870990e585e35a2.eot?#iefix')
+      format('embedded-opentype'),
+    url('//db.onlinewebfonts.com/t/cbf9b417fc15851ba870990e585e35a2.woff2')
+      format('woff2'),
+    url('//db.onlinewebfonts.com/t/cbf9b417fc15851ba870990e585e35a2.woff')
+      format('woff'),
+    url('//db.onlinewebfonts.com/t/cbf9b417fc15851ba870990e585e35a2.ttf')
+      format('truetype'),
+    url('//db.onlinewebfonts.com/t/cbf9b417fc15851ba870990e585e35a2.svg#DIN')
+      format('svg');
+}
 
-.content{
-    flex: 1;
+.content {
+  flex: 1;
 }
 
 header {
-    position: sticky;
-    top: 0;
-    z-index: 100;
-    padding: 5px;
-    color: #ffffff;
-    font-family: 'DIN';
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  padding: 5px;
+  color: #ffffff;
+  font-family: 'DIN';
 }
 
-main{
-
+main {
 }
 
 footer {
-    color:#ffffff;
-    padding-left: 15px;
-    font-family: 'DIN';
+  color: #ffffff;
+  padding-left: 15px;
+  font-family: 'DIN';
 }
 
-#spacer{
-    height: auto;
-    width: 100%;
+#spacer {
+  height: auto;
+  width: 100%;
 }
 
-.primary{
-    background-color: #00152C;
+.primary {
+  background-color: #00152c;
 }
 
-.secondary{
-background-color: #001020;
+.secondary {
+  background-color: #001020;
 }
 
-#container{
-    display: flex;
-    margin-left: 17%;
+#container {
+  display: flex;
+  margin-left: 17%;
 }
 
-#contact{
-    padding: 1em;
-    flex-grow: 1;
+#contact {
+  padding: 1em;
+  flex-grow: 1;
 }
 
-#info{
-    padding: 1em;
-    flex-grow: 1;
+#info {
+  padding: 1em;
+  flex-grow: 1;
 }
 
-#socials{
-    padding: 1em;
-    flex-grow: 1;
-} 
+#socials {
+  padding: 1em;
+  flex-grow: 1;
+}
 
 .slideshow {
-    position: relative;
-    height: 95vh;
-    width: 100%;
-  }
-  
-  .slide {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-size: cover;
-    background-position: center;
-    animation: fade 18s infinite;
+  position: relative;
+  height: 95vh;
+  width: 100%;
+}
+
+.slide {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-size: cover;
+  background-position: center;
+  animation: fade 24s infinite linear;
+  opacity: 0;
+}
+
+.slide-text {
+  position: absolute;
+  bottom: 55%;
+  left: 45%;
+  color: white;
+  padding: 10px;
+  font-family: 'DIN';
+  font-weight: 900;
+  font-size: 80px;
+}
+
+.slide:nth-child(1) {
+  animation-delay: 0s;
+}
+
+.slide:nth-child(2) {
+  animation-delay: 8s;
+}
+
+.slide:nth-child(3) {
+  animation-delay: 16s;
+}
+
+@keyframes fade {
+  0% {
     opacity: 0;
   }
-  
-  .slide-text {
-    position: absolute;
-    bottom: 55%;
-    left: 45%;
-    color: white;
-    padding: 10px;
-    font-family: 'DIN';
-    font-weight: 900;
-    font-size: 80px;
+  5% {
+    opacity: 1;
   }
-  
-  .slide:nth-child(1) {
-    animation-delay: 0s;
+  38.333% {
+    opacity: 1;
   }
-  
-  .slide:nth-child(2) {
-    animation-delay: 6s;
+  38.4% {
+    opacity: 0;
   }
-  
-  .slide:nth-child(3) {
-    animation-delay: 12s;
-  }
-  
-  @keyframes fade {
-    0% { opacity: 0; }
-    20% { opacity: 1; }
-    30% { opacity: 1; }
-    80% { opacity: 0; }
-    100% { opacity: 0; }
-  }
+}
 
-.main-subtitle{
-    font-weight: 650;
-    text-decoration: underline;
+.slide-pop-first {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-size: cover;
+  background-position: center;
+  animation: fade-pop-first 24s infinite linear;
+  animation-delay: 24s;
+  opacity: 0;
+}
+
+@keyframes fade-pop-first {
+  0% {
+    opacity: 0;
+  }
+  5% {
+    opacity: 1;
+  }
+  10% {
+    opacity: 0;
+  }
+}
+
+.main-subtitle {
+  font-weight: 650;
+  text-decoration: underline;
 }
