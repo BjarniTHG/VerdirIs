@@ -68,6 +68,7 @@ footer {
 #info{
     padding: 1em;
     flex-grow: 1;
+    z-index: 10000;
 }
 
 #socials {
